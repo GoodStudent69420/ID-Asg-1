@@ -1,4 +1,12 @@
 /* every thing for the nav bar*/
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 nav{
   position: fixed;
   margin-top: -10px;
@@ -13,7 +21,6 @@ nav{
   padding: 5px;
   overflow: hidden;
   background-color: #928282;
-  list-style: none;
 }
 
 .navLi{
@@ -27,7 +34,6 @@ nav{
   display: flex;
   color: white;
   padding: 20px 16px;
-  text-decoration: none;
   }
 
 .aNav:hover{
@@ -227,12 +233,10 @@ nav{
 }
 
 .selectionUl{
-  list-style: none;
   margin:50px;
 }
 
 .selectionA{
-  text-decoration: none;
   color: gray;
   font-size: large;
 }
@@ -255,8 +259,64 @@ nav{
 }
 
 footer{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 500px;
   margin-top: 100px;
   background-color: black;
+}
+
+.footerUl{
+  float: left;
+  font-size: 25px;
+  margin-left: 200px;
+}
+
+.footerA{
+  color: white;
+}
+
+.footerUlSocial{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.socialLi{
+  margin:20px;
+}
+
+.blackBoxBottom{
+  display: flex;
+  flex-direction: column;
+}
+
+#footerHr{
+  background-color: gray;
+  margin-top: 2.5em;
+  width: 75%;
+}
+
+.footerCopyright{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerSection{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottomLi{
+  display: inline-block;
+}
+
+.bottomA{
+  color: gray;
+  margin: 10px;
 }
