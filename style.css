@@ -144,12 +144,7 @@ nav{
   to {opacity: 1}
 }
 
-#featured{
-  margin-top: 100px;
-  margin-bottom: -100px;
-}
-
-.featured{
+.trending{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,8 +164,8 @@ nav{
 }
 
 .dis1{
-    max-width: 575px;
-    margin-top: -84px;
+  max-width: 575px;
+  margin-top: -84px;
 }
 
 .dis2, .dis3{
@@ -324,36 +319,81 @@ footer{
 /*responsive*/
 @media screen and (max-width: 650px) {
   nav {
-    height: 100%;
-    width: 0;
     position: fixed;
     z-index: 2;
     top: 0;
-    left: 0;
     background-color:#D21600;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 20px;
+  }
+
+  .navLi{
+    font-size: small;
   }
   
-  .aNav {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  .trending{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
   }
-  
-  .aNav:hover {
-    color: #f1f1f1;
+
+  .disBtn1, .disBtn2, .disBtn3{
+    transform: translate(-50%, -200%);
+
   }
-  
-  .nav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+
+  .selection{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thinBar{
+    display: none;
+  }
+
+  .selection{
+    margin-left: -50px;
+  }
+
+  .selectionUl{
+    margin: 10px;
+  }
+
+  footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+  }
+
+  .footerUl{
+    font-size: medium;
+    margin: 0;
+  }
+
+  .footerUlSocial{
+    margin-top: 0;
+  }
+
+  .socialLi{
+    margin: 5px;
+  }
+
+  .footerImages{
+    width: 20px; 
+    height: 20px;
+  }
+
+  .footerSection{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    margin-left: 10px;
+  }
+
+  .footerCopyright{
+    display: flex;
+    justify-content: space-between;
   }
 }

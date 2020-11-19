@@ -9,14 +9,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="loginStyle.css">
     </head>
-    <body onresize="responsive()" onload="responsive()"> 
-         <div id="sideNav">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-         </div>
-            
-
+    <body>   
         <nav id="navId">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="closebtn">&times;</a>
             <ul class="navUl">
                 <li style="float:left" class="navLi"><input type="image" src="Pictures\logo.png" alt="logo" width="60px" height="60px" id="logo" id="logo"></li>
                 <li class="navLi"><a href="#products" class="aNav">Products</a></li>
@@ -24,12 +18,10 @@
                 <li class="navLi"><a href="#contact" class="aNav">Contact</a></li>
                 <li style="float: right;" class="navLi"><input type="image" src="Pictures\cart.png" alt="cart" width="30px" height="30px" id="logo" class="icons"></li>
                 <li style='float: right;' class="navLi"><input type="image" src="Pictures\account.png" alt="login" width="30px" height="30px" id="logo" onclick="document.getElementById('login').style.display='block'" class="icons"></li>
-
             </ul>
         </nav>
         
         <div class="slideshow">
-            
             <!-- Slideshow container -->
             <div class="slideshow-container">
                 <h1>Selection</h1>
@@ -95,7 +87,7 @@
             </script>
         </div>
         
-        <div class="featured">
+        <div class="trending">
             <article class="dis1">
                 <h1 style="font-size: 30px;">Trending</h1>
                 <input type="image" src="Pictures\placeholder2.jpg" alt="product" id="dis1" width="96%">
@@ -109,7 +101,7 @@
 
             <article class="dis3">
                 <input type="image" src="Pictures\placeholder2.jpg" alt="product" id="dis3" width="96%">
-                <button class="disBtn3" width=100% >Shop</button>
+                <button class="disBtn3" >Shop</button>
             </article>
         </div>
 
@@ -126,14 +118,14 @@
                 <li class="selectionLi"><a href="#Shoes" class="selectionA">Shoes</a></li>
             </ul>
 
-            <div class="thinBar"></div>
+            <div class="thinBar" id="thinBar"></div>
 
             <ul class="selectionUl">
                 <li><h1>Support</h1></li>
                 <li class="selectionLi"><a href="#Contact" class="selectionA">Contact</a></li>
             </ul>
 
-            <div class="thinBar"></div>
+            <div class="thinBar" id="thinBar"></div>
             
             <ul class="selectionUl">
                 <li><h1>Company</h1></li>
@@ -150,10 +142,10 @@
                 </ul>
 
                 <ul class="footerUlSocial">
-                    <li class="socialLi"><input type="image" src="Pictures\facebook.png" alt="facebook" id="facebook" width="90px" height="90px"></li>
-                    <li class="socialLi"><input type="image" src="Pictures\instagram.png" alt="instagram" id="instagram" width="90px" height="90px"></li>
-                    <li class="socialLi"><input type="image" src="Pictures\twitter.png" alt="twitter" id="twitter" width="90px" height="90px"></li>
-                    <li class="socialLi"><input type="image" src="Pictures\youtube.png" alt="youtube" id="youtube" width="100px" height="100px"></li>
+                    <li class="socialLi"><input type="image" src="Pictures\facebook.png" alt="facebook" id="facebook" width="90px" height="90px" class="footerImages"></li>
+                    <li class="socialLi"><input type="image" src="Pictures\instagram.png" alt="instagram" id="instagram" width="90px" height="90px" class="footerImages"></li>
+                    <li class="socialLi"><input type="image" src="Pictures\twitter.png" alt="twitter" id="twitter" width="90px" height="90px" class="footerImages"></li>
+                    <li class="socialLi"><input type="image" src="Pictures\youtube.png" alt="youtube" id="youtube" width="100px" height="100px" class="footerImages"></li>
                 </ul>
             </div>
             <div class="blackBoxBottom">
@@ -174,8 +166,7 @@
         </footer>
 
         <!--The pop-up login form-->
-        <div id="login" class="modal"> 
-    
+        <div id="login" class="modal">
             <form class="modal-content animate" action="/action_page.php"> 
                 <div class="imgcontainer"> 
                     <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">×</span> 
@@ -232,22 +223,9 @@
                     modal.style.display = "none"; 
                     modal2.style.display = "none";
                 } 
-            } 
-
-            function responsive(){
-                var sideNav = document.getElementById("sideNav");
-                var closeBtn = document.getElementById("closebtn");
-                if (screen.width > 650){
-                    sideNav.style.display = "none"
-                    closeBtn.style.display = "none"
-                }
-                else{
-                    sideNav.style.display = "block"
-                    closeBtn.style.display = "block"
-                }
             }
-           
 
+        
             function openNav() {
                 document.getElementById("navId").style.width = "250px";
             }
