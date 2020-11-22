@@ -211,11 +211,22 @@ span.psw {
 
 .login-container{
     width: 300px;
-    height: 600px;
     background-color: wheat;
     color: black;
     position: relative;
 }
+
+#login-container
+{
+    height: 400px;
+}
+
+#signup-container
+{
+    height: 550px;
+}
+
+
 
 .login-container p{
     font-size: 30px;
