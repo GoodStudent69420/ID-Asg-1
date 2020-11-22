@@ -36,4 +36,13 @@ window.onclick = function(event) {
     } 
 }
 
-
+function show(a){
+  if (a == "login"){
+    document.getElementById("signup").style.display = "none";
+    document.getElementById(a).style.display = "flex";
+  }
+  else{
+    document.getElementById("login").style.display = "none";
+    document.getElementById(a).style.display = "flex";
+  }
+}

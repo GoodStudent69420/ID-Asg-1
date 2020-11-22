@@ -21,7 +21,7 @@
                 <li class="navLi"><a href="#about" class="aNav">About</a></li>
                 <li class="navLi"><a href="#contact" class="aNav">Contact</a></li>
                 <li style="float: right;" class="navLi"><input type="image" src="Pictures\cart.png" alt="cart" width="30px" height="30px" id="logo" class="icons"></li>
-                <li style='float: right;' class="navLi"><input type="image" src="Pictures\account.png" alt="login" width="30px" height="30px" id="logo" onclick="document.getElementById('login').style.display='block'" class="icons"></li>
+                <li style='float: right;' class="navLi"><input type="image" src="Pictures\account.png" alt="login" width="30px" height="30px" id="logo" onclick="show('login')" class="icons"></li>
             </ul>
         </nav>
         
@@ -138,51 +138,52 @@
         </footer>
 
         <!--The pop-up login form-->
-        <div id="login" class="modal">
-            <form class="modal-content animate" action="/action_page.php"> 
-                <div class="imgcontainer"> 
-                    <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">×</span> 
-                    <img src= "Pictures/logo.png" alt="Avatar" class="avatar"> 
-                </div> 
-    
-                <div class="topContainer"> 
-                    <input type="email" placeholder="Email" name="email" required> 
+        <div id="login">
+            <div class="login-container">
+                <div class="top">
+                    <img src="Pictures/logo.png">
+                    <a class="close" onclick="document.getElementById('login').style.display = 'none'">x</a>
+                </div>
+                <div class="mid">
+                    <input type="email" placeholder="Email" name="email" required><br>
                     <input type="password" placeholder="Password" name="psw" required> 
-                </div> 
-                <div class="midContainer">
+                </div>
+                <div class="mid2">
                     <span><input type="checkbox" checked="checked"> Remember me</span>
                     <span>Forgot <a href="#" style="color: black;">password?</a></span>
                 </div>
-
-                <div class="bottomContainer"> 
-                    <button type="submit" class="loginBtn">Login</button>
-                    <span>New User?<a href="#signup" onclick="(document.getElementById('signup').style.display='block') (document.getElementById('login').style.display='none')" style="color: black;"> Sign Up</span>
-                </div> 
-            </form> 
-        </div> 
-    
-        <div id="signup" class="modal"> 
-            <form class="modal-content animate" action="/action_page.php"> 
-                <div class="imgcontainer"> 
-                    <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">×</span> 
-                    <img src= "Pictures/logo.png" alt="Avatar" class="avatar"> 
-                </div> 
-    
-                <div class="topContainer"> 
+                <div class="bot">
+                    <button onclick="document.getElementById('login').style.display = 'none'">Login</button>
+                </div>
+                <div class="bot">
+                    <label>New User?<a onclick="show('signup')"> Sign up</a></label>
+                </div>
+            </div>
+        </div>
+        
+        <div id="signup">
+            <div class="login-container">
+                <div class="top">
+                    <img src="Pictures/logo.png">
+                    <a class="close" onclick="document.getElementById('login').style.display = 'none'">x</a>
+                </div>
+                <div class="mid">
                     <input type="email" placeholder="Email" name="email" required> 
                     <input type="password" placeholder="Enter Password" name="psw" required> 
                     <input type="password" placeholder="Confirm Password" name="cpsw" required> 
                     <input type="text" placeholder="Name" name="name" required> 
                     <input type="date" placeholder="Date of Birth" name="dob" required> 
-                    <span><input type="checkbox" checked="checked"> I want to receive promotions via email</span>
-                </div>                     
-
-                <div class="bottomContainer2"> 
-                    <button type="submit" class="loginBtn">Sign Up</button><br>
-                    <span>Existing User?<a href="#login" onclick="(document.getElementById('login').style.display='block') (document.getElementById('signup').style.display='none')" style="color: black;"> Login</span>
-                </div> 
-            </form> 
+                    <label><input type="checkbox" checked="checked"> I want to receive promotions via email</label>
+                </div>
+                <div class="bot">
+                    <button onclick="document.getElementById('signup').style.display = 'none'">Sign Up</button>
+                </div>
+                <div class="bot">
+                    <label>existing User?<a onclick="show('login')"> Login</a></label>
+                </div>
+            </div>
         </div>
-        <script src="js/script.js" async defer></script>
+
+        <script src="js/script.js" defer></script>
     </body>
 </html>
