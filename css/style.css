@@ -40,6 +40,10 @@ nav{
   background-color: black;
 }
 
+#logo:hover{
+  opacity: 0.8;
+}
+
 .icons{
   position: relative;
   margin-right: 25px;
@@ -310,10 +314,9 @@ footer{
     position: fixed;
     z-index: 2;
     top: 0;
-    background-color:#D21600;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .navLi{

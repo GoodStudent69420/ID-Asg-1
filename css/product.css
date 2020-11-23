@@ -36,6 +36,10 @@ nav{
     padding: 20px 16px;
 }
 
+#logo:hover{
+    opacity: 0.8;
+}
+
 .aNav:hover{
     background-color: black;
 }
@@ -183,10 +187,8 @@ footer{
       position: fixed;
       z-index: 2;
       top: 0;
-      background-color:#D21600;
       overflow-x: hidden;
       transition: 0.5s;
-      padding-top: 20px;
     }
   
     .navLi{

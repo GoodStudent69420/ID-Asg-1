@@ -3,41 +3,49 @@
   }
 
 .centerText {   
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5vw;
-    line-height: 2;
-    text-align: center;
-    font-family: Courier Bold,Courier,Georgia,Times,serif;  
-    -webkit-text-stroke: 3px #0BC9BD;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  line-height: 2;
+  text-align: center;
+  font-family: Courier Bold,Courier,Georgia,Times,serif;  
+  -webkit-text-stroke: 3px #0BC9BD;
+}
 
-  .description{
-    font-family: Courier Bold,Courier,Georgia,Times,serif; 
-    margin-top: 6%;
-    padding-left: 30%;
-    padding-right: 25%;
-  }
+.description{
+  font-family: Courier Bold,Courier,Georgia,Times,serif; 
+  margin-top: -10px;
+  padding-top: 5.8%;
+  padding-bottom: 5.8%;
+  padding-left: 30%;
+  padding-right: 25%;
+  background-color: #D4D4D4;
+}
 
-  #discH1{
-    font-size: 40px;
-  }
+#discH1{
+  font-size: 40px;
+}
 
-  #discP{
-    font-size: 20px;
-  }
+#discP{
+  font-size: 20px;
+}
+
+.sideNote p{
+  font-family: Courier Bold,Courier,Georgia,Times,serif; 
+  font-size: 20px;
+}
 
 #innoH1, #quaH1{
     font-size: 60px;
 }
 
-#innoH1{
+#innoH1, #note1{
     margin-right: 40px;
 }
 
-#quaH1{
+#quaH1, #note2{
     margin-left: 40px;
 }
 
@@ -46,5 +54,5 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 185px;
 }

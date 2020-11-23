@@ -15,7 +15,7 @@
             <ul class="navUl">
                 <li style="float:left" class="navLi">
                     <a href="C:\Users\lolot\OneDrive\Desktop\ID\ID_10207996G_KongYiFeiDarius_Assg01_Checkpoint\ID-Asg-1\index.html">
-                        <img src="Pictures/logo.png" alt="logo" width="60px" height="60px" id="logo" id="logo">
+                        <img src="Pictures/logo.png" alt="logo" width="60px" height="60px" id="logo">
                     </a>
                 </li>
                 <li class="navLi"><a href="C:\Users\lolot\OneDrive\Desktop\ID\ID_10207996G_KongYiFeiDarius_Assg01_Checkpoint\ID-Asg-1\product.html" class="aNav">Products</a></li>
@@ -36,18 +36,30 @@
             <p id="discP">Sprint originated from Singapore from the brilliant mind of John Doe. He has always believed in maximizing human potential through his products. By making products with quality over quantity in mind, groundbreaking achievements have been made trough our products.</p>
         </div>
 
-        <div class="innovative">
-            <div class="smallImage">
-                <h1 id="innoH1">Innovation</h1>
-                <input type="image" src="Pictures\placeholder2.jpg" alt="innoImg" id="squarImg" width="20%">
-            </article>
-        </div>
+        <div class="boxes">
+            <div class="innovative">
+                <div class="smallImage">
+                    <div class="sideNote" id="note1">
+                        <h1 id="innoH1">Innovation</h1>
+                        <hr>
+                        <p>State of the art design for timeless wearables</p>
+                        <hr>
+                    </div>
+                    <input type="image" src="Pictures\placeholder2.jpg" alt="innoImg" id="squarImg" width="20%">
+                </article>
+            </div>
 
-        <div class="quality">
-            <div class="smallImage">
-                <input type="image" src="Pictures\placeholder2.jpg" alt="quaImg" id="squarImg" width="20%">
-                <h1 id="quaH1">Quality</h1>
-            </article>
+            <div class="quality">
+                <div class="smallImage">
+                    <input type="image" src="Pictures\placeholder2.jpg" alt="quaImg" id="squarImg" width="20%">
+                    <div class="sideNote" id="note2">
+                        <h1 id="quaH1">Quality</h1>
+                        <hr>
+                        <p>Superior quality, best bang for buck</p>
+                        <hr>
+                    </div>
+                </article>
+            </div>
         </div>
 
         <footer>
@@ -84,7 +96,7 @@
 
         <!--The pop-up login form-->
         <div id="login">
-            <div id="login-container" class="login-container">
+            <div id="login-container" class="containers">
                 <div class="top">
                     <img src="Pictures/logo.png">
                     <a class="close" onclick="document.getElementById('login').style.display = 'none'">x</a>
@@ -98,7 +110,7 @@
                     <span>Forgot <a href="#" style="color: black;">password?</a></span>
                 </div>
                 <div class="bot">
-                    <button onclick="document.getElementById('login').style.display = 'none'">Login</button>
+                    <button onclick="document.getElementById('login').style.display='none'">Login</button>
                 </div>
                 <div class="bot">
                     <label>New User?<a onclick="show('signup')"> Sign up</a></label>
@@ -107,7 +119,7 @@
         </div>
         
         <div id="signup">
-            <div id="signup-container" class="login-container">
+            <div id="signup-container" class="containers">
                 <div class="top">
                     <img src="Pictures/logo.png">
                     <a class="close" onclick="document.getElementById('signup').style.display = 'none'">x</a>
@@ -128,6 +140,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <script src="js/script.js" async defer></script>
     </body>
 </html>
