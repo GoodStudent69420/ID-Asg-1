@@ -23,7 +23,8 @@ On the secondary nav bar, there is the product, support and comapany header. Sad
 The footer is at the bottom of every page. It includes the social media icons, however they are not linked to anywhere as there is no existing social media for the website. The other buttons are simply for display if the user wants to link them to somwhere. Only the sign up text links to the sign up display. 
 
 --- Technologies Used ---
-HTML 
+HTML,
+CSS, 
 Javascript
 
 --- Testing ---
