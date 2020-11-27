@@ -1,4 +1,4 @@
-/* every thing for the nav bar*/
+/*every thing for the nav bar*/
 ul{
     list-style: none;
 }
@@ -7,12 +7,12 @@ a {
     text-decoration: none;
 }
 
-nav{
+.productNav{
     position: fixed;
     top: 0;
     margin-left: -10px;
     width: 100%;
-    z-index: 9999;
+    z-index: 5;
 }
 
 .navUl {
@@ -50,22 +50,45 @@ nav{
     margin-top: 15px;
 }
 
-/*everything for trending boxes*/
+/*everything for product boxes*/
 #products{
-    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.trending{
+.allProducts{
+    width: 86%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
-    margin-top: 50px;
-    margin-left: 30px;
+    flex-wrap: wrap;
+    max-width: 1800px;
+    padding-top: 100px;
 }
-  
-.dis, .dis, .dis{
-    max-width: 575px;
+
+.dis{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #0BC9BD;
+    border-width: 8px;
+    margin: 20px;
 }
+
+.img-container{
+    width: 100%;
+    height: auto ; 
+    object-fit: contain;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: -45px;
+}
+
 
 .disBtn{
     z-index: 1;
@@ -73,9 +96,8 @@ nav{
     top: -15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: white;
-    color: black;
+    background-color: gray;
+    color: white;
     font-size: 16px;
     padding: 12px 30px;
     border: none;
@@ -183,63 +205,101 @@ footer{
 }
 
 @media screen and (max-width: 650px) {
-    nav {
-      position: fixed;
-      z-index: 2;
-      top: 0;
-      overflow-x: hidden;
-      transition: 0.5s;
-    }
-  
+    .productNav {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 0;
+      }
+
     .navLi{
-      font-size: small;
+        font-size: small;
+    }
+
+    .allProducts{
+        margin-left: 0px;
+    }
+
+    .disBtn{
+        font-size: 10px;
+        padding: 6px 15px;
     }
   
     .selection{
-      margin-left: -50px;
+        display: flex;
+        flex-direction: column;
     }
-  
+
+    .thinBar{
+        display: none;
+    }
+
+    .selection{
+        margin-left: -50px;
+    }
+
     .selectionUl{
-      margin: 10px;
+        margin: 10px;
     }
-  
-    footer{
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      bottom: 0;
-    }
-  
-    .footerUl{
-      font-size: medium;
-      margin: 0;
-    }
-  
-    .footerUlSocial{
-      margin-top: 0;
-    }
-  
-    .socialLi{
-      margin: 5px;
-    }
-  
-    .footerImages{
-      width: 20px; 
-      height: 20px;
-    }
-  
-    .footerSection{
-      display: flex;
-      flex-direction: column;
-      font-size: small;
-      margin-left: 10px;
-    }
-  
-    .footerCopyright{
-      display: flex;
-      justify-content: space-between;
-    }
+    
+        footer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        }
+    
+        .footerUl{
+        font-size: medium;
+        margin: 0;
+        }
+    
+        .footerUlSocial{
+        margin-top: 0;
+        }
+    
+        .socialLi{
+        margin: 5px;
+        }
+    
+        .footerImages{
+        width: 20px; 
+        height: 20px;
+        }
+    
+        .footerSection{
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        margin-left: 10px;
+        }
+    
+        .footerCopyright{
+        display: flex;
+        justify-content: space-between;
+        }
 }
 
 
+/* @media screen and (max-width: 650px) {
+    .trending{
+        width: 1160px;
+    }
+    .dis{
+        width: 220px;
+        height: 225px;
+    }
+} */
 
+
+@media screen and (max-width: 810px) {
+    .trending{
+        max-width: 660px;
+    }
+    .dis{
+        padding: 3px 5px;
+        width: 220px;
+        height: 225px;
+    }
+}

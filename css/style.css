@@ -1,4 +1,5 @@
-/* every thing for the nav bar*/
+/* CSS PORTION FOR INDEX.HTML
+---every thing for the nav bar*/
 ul{
   list-style: none;
 }
@@ -7,12 +8,12 @@ a {
   text-decoration: none;
 }
 
-nav{
+.indexNav{
   position: fixed;
   margin-top: -10px;
   margin-left: -10px;
   width: 100%;
-  z-index: 9999;
+  z-index: 5;
 }
 
 .navUl {
@@ -137,8 +138,8 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 200px;
-  margin-left: 30px;
+  margin: 0 auto;
+  padding-top: 10%;
 }
 
 .dis1{
@@ -156,9 +157,8 @@ nav{
   top: -12.6%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: white;
-  color: black;
+  background-color: gray;
+  color: white;
   font-size: 16px;
   padding: 12px 30px;
   border: none;
@@ -172,9 +172,8 @@ nav{
   top: -15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: white;
-  color: black;
+  background-color: gray;
+  color: white;
   font-size: 16px;
   padding: 12px 30px;
   border: none;
@@ -308,14 +307,263 @@ footer{
   margin: 10px;
 }
 
+/*-------------------------------CSS PORTION FOR PRODUCT.HTML---------------------------------
+----nav bar------*/
+.productNav{
+  position: fixed;
+  top: 0;
+  margin-left: -10px;
+  width: 100%;
+  z-index: 5;
+}
+
+/*everything for product boxes*/
+#products{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.allProducts{
+  width: 86%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1800px;
+  padding-top: 100px;
+}
+
+.dis{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #0BC9BD;
+  border-width: 8px;
+  margin: 20px;
+}
+
+.img-container{
+  width: 100%;
+  height: auto ; 
+  object-fit: contain;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: -45px;
+}
+
+
+.disBtn{
+  z-index: 1;
+  position: relative;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/*-------------------------------CSS PORTION FOR ABOUT.HTML---------------------------------*/
+.mottoDiv {
+  position: relative;
+}
+
+.centerText {   
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 5vw;
+line-height: 2;
+text-align: center;
+font-family: Courier Bold,Courier,Georgia,Times,serif;  
+-webkit-text-stroke: 3px #0BC9BD;
+}
+
+.description{
+font-family: Courier Bold,Courier,Georgia,Times,serif; 
+margin-top: -10px;
+padding-top: 5.8%;
+padding-bottom: 5.8%;
+padding-left: 30%;
+padding-right: 25%;
+background-color: #D4D4D4;
+}
+
+#discH1{
+font-size: 40px;
+}
+
+#discP{
+font-size: 20px;
+}
+
+.sideNote p{
+font-family: Courier Bold,Courier,Georgia,Times,serif; 
+font-size: 20px;
+}
+
+#innoH1, #quaH1{
+  font-size: 60px;
+}
+
+#innoH1, #note1{
+  margin-right: 40px;
+}
+
+#quaH1, #note2{
+  margin-left: 40px;
+}
+
+.smallImage{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+/*----------------------------CSS PORTION FOR POP-UP LGIN & SIGN UP----------------------------*/
+#login, #signup{
+  display: none;
+  position: fixed;
+  justify-content: center;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.top{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.mid{
+  padding-top: 10px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.mid input{
+  margin-left: 20px;
+}
+
+.bot{
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.bot button{
+  text-align: center;
+  width: 60%;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #0BC9BD;
+}
+
+.bot a, .bot button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.top img{
+  width: 15%;
+}
+
+.containers{
+  width: 300px;
+  border-width: 3px;
+  border-color: black;
+  background-color: white;
+  color: black;
+  position: relative;
+}
+
+#login-container
+{
+  height: 400px;
+}
+
+#signup-container
+{
+  height: 550px;
+}
+
+.login-container p{
+  font-size: 30px;
+}
+
+.mid2{
+  display: flex;
+  justify-content: space-around;
+}
+
+.close{ 
+  position: absolute; 
+  right: 20px; 
+  top: 0px; 
+  font-size: 35px; 
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-weight: bold; 
+}
+
+.close:hover{
+  cursor: pointer;
+  color: red;
+}
+
+input[type=email], 
+input[type=password],
+input[type=date],
+input[type=text] { 
+  width: 80%; 
+  padding: 12px 20px; 
+  margin: 8px 0; 
+  display: inline-block; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+} 
+
+/*animation*/
+.containers {
+  animation: fadeIn ease 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+      opacity:0;
+  }
+  100% {
+      opacity:1;
+  }
+}  
+
+
 /*responsive*/
 @media screen and (max-width: 650px) {
+/*--------------------RESPONSIVE FOR INDEX.HTML PAGE-----------------------*/
   nav {
     position: fixed;
     z-index: 2;
     top: 0;
     overflow-x: hidden;
-    transition: 0.5s;
     padding-top: 10px;
   }
 
@@ -326,13 +574,16 @@ footer{
   .trending{
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
   }
 
   .disBtn1, .disBtn2, .disBtn3{
     transform: translate(-50%, -200%);
 
   }
+
+  .bigDisBtn {
+    margin-top: -30px;
+    }
 
   .selection{
     display: flex;
@@ -387,4 +638,68 @@ footer{
     display: flex;
     justify-content: space-between;
   }
+
+/*--------------------RESPONSIVE FOR PRODUCT PAGE-----------------------*/
+  .productNav {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 0;
+  }
+
+  .allProducts{
+    margin-left: 0px;
+  }
+
+  .disBtn{
+    font-size: 10px;
+    padding: 6px 15px;
+  }
+
+  .img-container{
+    margin-bottom: -25px;
+  }
+
+  /*--------------------RESPONSIVE FOR ABOUT PAGE-----------------------*/
+  .mottoDiv {
+    margin-top: 100px;
+  }
+
+  #smallImage1{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #smallImage2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #innoH1{
+    text-align: center;
+  }
+
+  #squarImg{
+    width: 50%;
+  }
+
+  .centerText{
+    -webkit-text-stroke: 1px #0BC9BD;
+  }
+
+  #innoH1, #quaH1{
+    font-size: 20px;
+  }
+
+  .sideNote p{
+    font-size: 10px;
+  }
+
+  /*--------------------RESPONSIVE FOR LOGIN & SIGNUP PAGE-----------------------*/
+  #login, #signup{
+    padding-top: 50%;
+  }
 }
+

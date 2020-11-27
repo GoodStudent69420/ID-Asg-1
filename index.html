@@ -6,11 +6,12 @@
         <title>Main Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/loginStyle.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav id="navId">
+        <!-- Navigation bar -->
+        <nav class="indexNav">
             <ul class="navUl">
                 <li style="float:left" class="navLi">
                     <a href="C:\Users\lolot\OneDrive\Desktop\ID\ID_10207996G_KongYiFeiDarius_Assg01_Checkpoint\ID-Asg-1\index.html">
@@ -29,19 +30,19 @@
             <!-- Slideshow container -->
             <div class="slideshow-container">
                 <h1>Selection</h1>
-                <!-- Full-width images with number and caption text -->
+                
                 <div class="mySlides fade">
-                <img src="Pictures\placeholder.png" style="width:100%">
+                <img src="Pictures\1920 x 1080\1080size1.jpg" style="width:100%">
                 <div class="text">Caption Text</div>
                 </div>
             
                 <div class="mySlides fade">
-                <img src="Pictures\placeholder.png" style="width:100%">
+                <img src="Pictures\1920 x 1080\1080size2.jpg" style="width:100%">
                 <div class="text">Caption Two</div>
                 </div>
             
                 <div class="mySlides fade">
-                <img src="Pictures\placeholder.png" style="width:100%">
+                <img src="Pictures\1920 x 1080\1080size3.jpg" style="width:100%">
                 <div class="text">Caption Three</div>
                 </div>
             
@@ -51,7 +52,6 @@
             </div>
             <br>
             
-            <!-- The dots/circles -->
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
@@ -59,30 +59,33 @@
             </div>
         </div>
             
+        <!-- Trending boxes -->
         <div class="trending">
             <article class="dis1">
                 <h1 style="font-size: 30px;">Trending</h1>
-                <input type="image" src="Pictures\placeholder2.jpg" alt="product" id="dis1" width="96%">
+                <input type="image" src="Pictures\640 x 640\product1.jpg" alt="product" id="dis1" width="96%">
                 <button class="disBtn1">Shop</button>
             </article>
             
             <article class="dis2">
-                <input type="image" src="Pictures\placeholder2.jpg" alt="product" id="dis2" width="96%">
+                <input type="image" src="Pictures\640 x 640\product2.jpg" alt="product" id="dis2" width="96%">
                 <button class="disBtn2">Shop</button>
             </article>
 
             <article class="dis3">
-                <input type="image" src="Pictures\placeholder2.jpg" alt="product" id="dis3" width="96%">
+                <input type="image" src="Pictures\640 x 640\product3.jpg" alt="product" id="dis3" width="96%">
                 <button class="disBtn3" >Shop</button>
             </article>
         </div>
 
+        <!-- Selection box --> 
         <div class="bigPicture">
             <h1 style="font-size: 30px;">Featured</h1>
-            <input type="image" src="Pictures\placeholder.png" alt="product" id="lastPic" width="100%">
+            <input type="image" src="Pictures\1920 x 1080\1080size4.jpg" alt="product" id="lastPic" width="100%">
             <button class="bigDisBtn" width=100% >Shop</button>
         </div>
         
+        <!-- Portion above footer -->
         <div class="selection">
             <ul class="selectionUl">
                 <li><h1>Product</h1></li>
@@ -105,6 +108,7 @@
             </ul>
         </div>
 
+        <!-- Footer -->
         <footer>
             <div class="blackBoxTop">
                 <ul class="footerUl">
@@ -161,6 +165,7 @@
             </div>
         </div>
         
+        <!--The pop-up sign-up form-->
         <div id="signup">
             <div id="signup-container" class="containers">
                 <div class="top">

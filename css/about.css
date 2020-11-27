@@ -54,5 +54,43 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 185px;
+    margin-top: 10%;
+}
+
+
+@media screen and (max-width: 650px) {
+  .mottoDiv {
+    margin-top: 100px;
+  }
+
+  #smallImage1{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #smallImage2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #innoH1{
+    text-align: center;
+  }
+
+  #squarImg{
+    width: 50%;
+  }
+
+  .centerText{
+    -webkit-text-stroke: 1px #0BC9BD;
+  }
+
+  #innoH1, #quaH1{
+    font-size: 20px;
+  }
+
+  .sideNote p{
+    font-size: 10px;
+  }
 }
